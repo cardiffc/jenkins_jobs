@@ -6,7 +6,7 @@ job('Build Code DSL') {
 	}
 	
 	scm() {
-		git('https://github.com/cardiffc/Jenkins_Upgradev3.git',mater)
+		git('https://github.com/cardiffc/Jenkins_Upgradev3.git',master)
 	
 	} 
 
