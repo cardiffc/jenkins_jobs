@@ -15,10 +15,10 @@ job('Build Code DSL') {
 		scm('* * * * *')
 	}
 	steps() {
-		maven('clean package', 'maven-samples/single-module/pom.xml')	
+		maven('clean package', 'java-tomcat-sample/pom.xml')	
 	}
 	publishers {
-	archiveArtifacts '**/*.jar'
+	archiveArtifacts '**/*.war'
 	}
 
 }
