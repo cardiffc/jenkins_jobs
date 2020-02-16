@@ -1,5 +1,5 @@
 job('Build Code DSL') {
-	description('Build code for' ${new Date()})
+	description('Build code for maven tomcat in new pipeline')
 	logRotator {
 		daysToKep(5)
         	artifactNumToKeep(5)
