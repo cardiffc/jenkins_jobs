@@ -1,4 +1,4 @@
-job('Build Code DSL') {
+job('Build 2 via DSL') {
 	description('Build code for ${new Date()}')
         discardOldBuilds(int daysToKeep = 5, int numToKeep = 5)
 	scm('*****') {
