@@ -1,5 +1,5 @@
 job('Build Code DSL') {
-	description('Build code for maven tomcat in new pipeline')
+	description("Build code for maven tomcat in new pipeline, generated on ${new Date()}")
 	logRotator {
 		daysToKeep(5) 
 		numToKeep(5)
@@ -12,7 +12,10 @@ job('Build Code DSL') {
 	} 
 
 	triggers() {
-		scm('* * * * *'){}
+		scm('* * * * *')
+	}
+	steps() {
+		maven('clean package', 'maven-samples/single-module/pom.xml')	
 	}
 
 }
