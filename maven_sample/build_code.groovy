@@ -1,7 +1,7 @@
 job('Build Code DSL') {
-	description('Build code for ${new Date()}')
+	description('Build code for' ${new Date()})
 	logRotator {
-		numToKeep(5)
+		daysToKep(5)
         	artifactNumToKeep(5)
 	}
 	
