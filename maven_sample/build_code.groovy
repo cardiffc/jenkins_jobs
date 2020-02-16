@@ -11,5 +11,9 @@ job('Build Code DSL') {
 	
 	} 
 
+	triggers() {
+		scm('* * * * *'){}
+	}
+
 }
 
