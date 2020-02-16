@@ -1,7 +1,7 @@
 job("Deploy Stage DSL") {
 	description("This job is job for deply sample tomcat to stage via DSL, generated on ${new Date()}")
 	logRotator {
-		dayToKeep(5)
+		daysToKeep(5)
 		numToKeep(5)
 	}
 	steps {
