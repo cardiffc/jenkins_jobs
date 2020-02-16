@@ -1,8 +1,12 @@
-job('Build 2 via DSL') {
+job('Build Code DSL') {
 	description('Build code for ${new Date()}')
-        discardOldBuilds(daysToKeep = 5, numToKeep = 5)
-	scm('*****') {
-		github('https://github.com/cardiffc/Jenkins_Upgradev3.git')
+	logRotator {
+		numToKeep(5)
+        	artifactNumToKeep(5)
+	}
+	
+	scm() {
+		git('https://github.com/cardiffc/Jenkins_Upgradev3.git',mater)
 	
 	} 
 
